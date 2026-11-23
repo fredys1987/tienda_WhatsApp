@@ -1,0 +1,16 @@
+Options -Indexes
+RewriteEngine On
+
+# /tienda/mi-tienda  ->  tienda.php?s=mi-tienda
+RewriteRule ^tienda/([a-z0-9-]+)/?$ tienda.php?s=$1 [L,QSA]
+# /tienda/mi-tienda/manifest.json  ->  manifest.php?s=mi-tienda
+RewriteRule ^tienda/([a-z0-9-]+)/manifest\.json$ manifest.php?s=$1 [L,QSA]
+
+# Archivos internos que no deben verse desde el navegador
+RewriteRule ^(inc|sql)/ - [F,L]
+<Files "config.php">
+  Require all denied
+</Files>
+<Files "config.example.php">
+  Require all denied
+</Files>
