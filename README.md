@@ -5,6 +5,7 @@ Plataforma sencilla tipo "nube" donde cada dueño crea su tienda, sube sus produ
 - **Dueño**: se registra, elige el enlace de su tienda (`/tienda/mi-tienda`), sube productos con foto, precio y descripción, y cambia logo, color y número de WhatsApp.
 - **Cliente**: abre el enlace, agrega productos al pedido, escribe su nombre y dirección, y al tocar **Enviar pedido por WhatsApp** se abre WhatsApp con el pedido listo y el total, dirigido al número del dueño.
 - **Tipo app**: cada tienda se puede "agregar a la pantalla de inicio" del celular y abre como una aplicación, con su propio ícono y color.
+- Documentación completa y mapa conceptual: [docs/DOCUMENTACION.md](docs/DOCUMENTACION.md).
 - Hecho en **PHP 8 + MySQL**, sin frameworks ni Composer, para que corra en XAMPP y en Hostinger tal cual.
 
 ## Correrlo en tu computador (XAMPP)
